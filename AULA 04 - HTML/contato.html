@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+</head>
+
+<body>
+    <h1>Formulário para Informações de Contato</h1>
+    <form method="post" action=".">
+        <fieldset id="usuario">
+            <legend><b>Dados Pessoais</b></legend>
+            <label for="cName">Nome:</label>
+            <input type="text" name="tName" id="cName" placeholder="Insira seu nome">
+            <br>
+            <label for="cMail">Email:</label>
+            <input type="email" name="tMail" id="cMail" placeholder="Insira seu email">
+            <br>
+            <label for="cTel">Telefone:</label>
+            <input type="tel" name="tTel" id="cTel" placeholder="Insira seu telefone">
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend><b>Motivo para Contato</b></legend>
+                <select name="topic" id="cTopic">
+                    <option value="hint">Sugestões</option>
+                    <option value="doubt">Dúvidas</option>
+                    <option value="problem"> Bugs ou erros</option>
+                    <option value="other">Outros</option>
+                </select>
+        </fieldset>
+
+        <br>
+        
+        <fieldset><legend><b>Gênero</b></legend>
+                <label for="cMasc">Masculino</label>
+                <input type="radio" name="tSexo" id="cMasc">
+                <label for="cFem">Feminino</label>
+                <input type="radio" name="tSexo" id="cFem">
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend><b>Termo</b></legend>
+            <a href="linkParaTermo">Termos de Confidencialidade</a>
+            <br>
+            <label for="cAgree">Aceito os termos</label>
+            <input type="radio" name="tContract" id="cAgree">
+            <label for="cDisagree">Não aceito os termos</label>
+            <input type="radio" name="tContract" id="cDisagree">
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend><b>Descrição do Contato</b></legend>
+            <textarea name="tMsg" id="cMsg" cols="80" rows="5" placeholder="Insira aqui sua mensagem"></textarea>
+        </fieldset>
+
+        <div>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </div>
+    </form>
+</body>
+
+</html>
